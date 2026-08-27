@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #081008;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.caja {
+    background-color: #121f12;
+    border: 2px solid #34c759;
+    border-radius: 16px;
+    padding: 30px;
+    width: 700px;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.formulario {
+    background-color: #1a2f1a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.campo {
+    margin-bottom: 12px;
+}
+
+label {
+    color: #90ee90;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f1f0f;
+    color: #ffffff;
+    border: 1px solid #34c759;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 8px;
+    background-color: #2e7d32;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #34c759;
+}
+
+.totales {
+    background-color: #142814;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    color: #c8e6c9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #2e7d32;
+    color: #e0ffe0;
+}
+
+tr:nth-child(even) {
+    background-color: #1a251a;
+}
+
+.eliminar {
+    background-color: #8b1a1a;
+    padding: 5px 10px;
+    font-size: 13px;
+    width: auto;
+    text-transform: none;
+}
+
+.eliminar:hover {
+    background-color: #c02828;
+}
+
+.volver {
+    background-color: transparent;
+    color: #90ee90;
+    border: 1px solid #34c759;
+    text-transform: none;
+}
