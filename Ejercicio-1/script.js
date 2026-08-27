@@ -1,13 +1,12 @@
-function registrar() {
-    let nombre = document.getElementById('nombre').value;
-    let edad = document.getElementById('edad').value;
-    let correo = document.getElementById('correo').value;
-    let ciudad = document.getElementById('ciudad').value;
-    let resultado = document.getElementById('resultado');
-
-    if (nombre === '' || edad === '' || correo === '' || ciudad === '') {
-        resultado.innerHTML = '<span class="icono-exito">⚠</span><span>Completa todos los campos.</span>';
-        return;
-    }
-    resultado.innerHTML = '<span class="icono-exito">✓</span><span>Hola, ' + nombre + '. Tienes ' + edad + ' años y vives en ' + ciudad + '.<br>Tu correo es ' + correo + '.</span>';
+function registrar(){
+  let n=document.getElementById('nom').value,
+      e=document.getElementById('edad').value,
+      c=document.getElementById('correo').value,
+      ci=document.getElementById('ciudad').value,
+      res=document.getElementById('res');
+  if(!n||!e||!c||!ci){
+    res.innerHTML='<span class="icono">!</span><span>Completa todos los campos</span>';
+    return;
+  }
+  res.innerHTML='<span class="icono">✓</span><span>¡Registro exitoso! Bienvenido '+n+'.<br>Tienes '+e+' años y vives en '+ci+'.<br>Correo: '+c+'</span>';
 }
