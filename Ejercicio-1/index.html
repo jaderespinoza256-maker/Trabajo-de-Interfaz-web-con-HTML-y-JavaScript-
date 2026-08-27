@@ -2,45 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de registro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<div class="contenedor">
-    <div class="titulo-con-icono">
-        <div class="icono-perfil">👤</div>
-        <h1>FORMULARIO DE REGISTRO</h1>
-    </div>
-    <div class="grupo">
-        <div class="etiqueta-con-icono">
-            <span class="icono">👤</span>
-            <label>NOMBRE COMPLETO</label>
-        </div>
-        <input type="text" id="nombre">
-    </div>
-    <div class="grupo">
-        <div class="etiqueta-con-icono">
-            <span class="icono">📅</span>
-            <label>EDAD</label>
-        </div>
-        <input type="number" id="edad">
-    </div>
-    <div class="grupo">
-        <div class="etiqueta-con-icono">
-            <span class="icono">✉️</span>
-            <label>CORREO ELECTRÓNICO</label>
-        </div>
-        <input type="email" id="correo">
-    </div>
-    <div class="grupo">
-        <div class="etiqueta-con-icono">
-            <span class="icono">📍</span>
-            <label>CIUDAD</label>
-        </div>
-        <input type="text" id="ciudad">
-    </div>
-    <button type="button" onclick="registrar()">REGISTRAR</button>
-    <div id="resultado"></div>
+<div class="caja">
+  <div class="titulo"><div class="icono">⚙</div><h1>Formulario de Registro</h1></div>
+  <div class="campo"><div class="etiqueta"><span class="et">👤</span><label>Nombre Completo</label></div><input type="text" id="nom"></div>
+  <div class="campo"><div class="etiqueta"><span class="et">📅</span><label>Edad</label></div><input type="number" id="edad"></div>
+  <div class="campo"><div class="etiqueta"><span class="et">✉️</span><label>Correo Electrónico</label></div><input type="email" id="correo"></div>
+  <div class="campo"><div class="etiqueta"><span class="et">📍</span><label>Ciudad</label></div><input type="text" id="ciudad"></div>
+  <button onclick="registrar()">REGISTRAR</button>
+  <div id="res"></div>
+  <button class="volver" onclick="location.href='../index.html'">← Volver al Menú</button>
 </div>
 <script src="script.js"></script>
 </body>
